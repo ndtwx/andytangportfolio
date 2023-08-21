@@ -245,8 +245,6 @@ h6 {
   background-size: cover;
 }
 
-
-
 #hero .hero-container {
   position: relative;
   z-index: 2;
@@ -369,7 +367,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: white;
 }
 
 .section-title h2::after {
@@ -385,6 +383,12 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the RGBA values to achieve the desired darkness and opacity */
+  
+  color: white;
 }
 
 /*--------------------------------------------------------------
