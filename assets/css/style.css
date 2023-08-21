@@ -385,6 +385,15 @@ section {
 
 }
 
+.skills-item {
+  text-align: center;
+  margin-top: 30px; /* Adjust this value as needed */
+}
+
+.skills-item i {
+  margin-bottom: 30px; /* Adjust this value as needed */
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
