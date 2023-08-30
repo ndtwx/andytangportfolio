@@ -1,3 +1,5 @@
+URL: https://ndtwx.github.io/andytangportfolio/
+
 Thanks for downloading this template!
 
 Template Name: iPortfolio
