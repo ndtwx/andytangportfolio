@@ -1,7 +1,7 @@
 /**
-* Template Name: iPortfolio
+* Template Name: iportfolio
 * Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-project-websites-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -163,25 +163,25 @@
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+    let projectContainer = select('.project-container');
+    if (projectContainer) {
+      let projectIsotope = new Isotope(projectContainer, {
+        itemSelector: '.project-item'
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let projectFilters = select('#project-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#project-flters li', function(e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        projectFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        portfolioIsotope.arrange({
+        projectIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        projectIsotope.on('arrangeComplete', function() {
           AOS.refresh()
         });
       }, true);
@@ -190,16 +190,16 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate project lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+  const projectLightbox = GLightbox({
+    selector: '.project-lightbox'
   });
 
   /**
-   * Portfolio details slider
+   * project details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.project-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {

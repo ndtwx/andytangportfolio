@@ -395,13 +395,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Project
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.project .project-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.project #project-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -411,7 +411,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.project #project-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -424,23 +424,23 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.project #project-flters li:hover,
+.project #project-flters li.filter-active {
   color: #149ddd;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.project #project-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.project .project-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
+.project .project-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -453,7 +453,7 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.project .project-wrap .project-links {
   opacity: 1;
   left: 0;
   right: 0;
@@ -465,7 +465,7 @@ section {
   justify-content: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.project .project-wrap .project-links a {
   color: #fff;
   font-size: 28px;
   text-align: center;
@@ -474,15 +474,15 @@ section {
   width: 50%;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.project .project-wrap .project-links a:hover {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a+a {
+.project .project-wrap .project-links a+a {
   border-left: 1px solid #37b3ed;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.project .project-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -490,7 +490,7 @@ section {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.project .project-wrap:hover .project-links {
   opacity: 1;
   bottom: 0;
 }
